@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --dark-green: #023020;
+    --purple: #5a01a7;
+    --success-green: #008000;
+    --failure-red: #a40000;
+}
+
+body {
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    text-align: center; 
+    padding: 20px;
+}
+
+.title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.8rem;
+    padding: 10px 0;
+    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), 
+        box-shadow 0.35s ease;
+    display: inline-block; 
+    will-change: transform;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.title:hover {
+    transform: translateY(-6px)scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);;
+}
+
+.palindrome-div {
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    padding: 20px;
+    box-shadow: 0 6px 6px #002ead;
+}
+
+.palindrome-text {
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.palindrome-input {
+    max-width: 270px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid var(--purple);
+    margin: 10px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.palindrome-input:focus {
+    background-color: transparent;
+    box-shadow: none;
+    border-color: var(--purple);
+}
+
+.palindrome-input.error {
+    border-bottom: 2px solid var(--failure-red);
+}
+
+.palindrome-button {
+    height: 38px;
+    width: 85px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--purple);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tip-definition {
+    background-color: var(--dark-green);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    width: 100%;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: peachpuff;
+}
+
+.user-result {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 20px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 1.5rem; 
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+.result-success {
+  color: var(--success-green);
+  font-weight: bold;
+}
+
+.result-failure {
+  color: var(--failure-red);
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.credit {
+  color: var(--light-grey);
+  font-size: 1.3rem;
+}
+.heart {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.heart:hover {
+  transform: scale(1.4);
+  text-shadow: 0 0 8px hotpink;
+}
