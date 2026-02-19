@@ -15,4 +15,4 @@ https://palindromecheckerjs.netlify.app/
 3. Enter text to test
 
 ## Author
-Jaffar
+Muhammad Jaffar
