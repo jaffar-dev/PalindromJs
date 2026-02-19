@@ -2,7 +2,7 @@
 A simple JavaScript project to check whether a word or number is a palindrome.
 
 ## Live Link:
-palindromecheckerjs.netlify.app
+https://palindromecheckerjs.netlify.app/
 
 ## Features
 - Checks strings
